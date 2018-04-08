@@ -17,11 +17,11 @@ Onsen UI bundles `css/onsen-css-components.css` wich can be directly included in
 
 ``` bash
 # install dependencies
-yarn install
+npm i
 
 # serve with hot reload at localhost:8080
-yarn run dev
+npm run dev
 
 # build for production with minification
-yarn run build
+npm run build
 ```
