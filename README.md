@@ -1,4 +1,4 @@
-# Mon application
+# My application
 
 This application is based on Vue Onsen UI Kitchen Sink [here](https://onsenui.github.io/vue-onsenui-kitchensink/)
 This is made with Vue.js and OnsenUI, for android app.
