@@ -22,10 +22,9 @@
 </template>
 
 <script>
-import Camera from './pages/Camera.vue';
 import Home from './pages/Home.vue';
-import Forms from './pages/Forms.vue';
-import Animations from './pages/Animations.vue';
+import Portfolio from './pages/Portfolio.vue';
+import Wallpapper from './pages/WallpapperHome.vue';
 
 // Just a linear interpolation formula
 const lerp = (x0, x1, t) => parseInt((1 - t) * x0 + t * x1, 10);
@@ -44,30 +43,16 @@ export default {
       topPosition: 0,
       tabs: [
         {
-          label: this.md ? null : 'Camera',
-          icon: 'ion-camera, material:md-camera',
-          page: Camera,
-          theme: red,
-          style: this.md ? { maxWidth: '60px' } : {},
-          top: -105 // Toolbar + Tabbar heights
-        },
-        {
           label: 'Home',
           icon: this.md ? null : 'ion-home',
           page: Home,
           theme: red
         },
         {
-          label: 'Forms',
-          icon: this.md ? null : 'ion-edit',
-          page: Forms,
+          label: 'Portfolio',
+          icon: this.md ? null : 'ion-home',
+          page: Portfolio,
           theme: blue
-        },
-        {
-          label: 'Anim',
-          icon: this.md ? null : 'ion-film-marker',
-          page: Animations,
-          theme: purple
         }
       ]
     };
@@ -108,7 +93,7 @@ export default {
       }
     },
     title() {
-      return this.md ? 'Onsen UI' : this.tabs[this.index].title || this.tabs[this.index].label;
+      return this.md ? 'Daniel Ricklin' : this.tabs[this.index].title || this.tabs[this.index].label;
     },
     swipeTheme() {
       return this.md && {
